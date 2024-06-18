@@ -33,7 +33,6 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  /* Estilos específicos para dispositivos con un ancho máximo de 600px */
   #lyrics {
       font-size: 14px;
       margin-bottom: 530px;
@@ -120,7 +119,7 @@ body {
   height: 5px;
   background: white;
   border-radius: 50%;
-  animation: shoot 1s ease-out infinite;
+  animation: shoot 1s ease-out infinite, explode 1s ease-out 1s infinite;
 }
 
 .firework--1 {
@@ -160,6 +159,15 @@ body {
   100% {
     opacity: 0;
     transform: scale(2);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
